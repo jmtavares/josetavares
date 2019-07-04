@@ -11,9 +11,7 @@ import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
 function SEO({ description, lang, meta, keywords, title }) {
-    const defaultKeywords = [
-        "web"
-    ];
+    const defaultKeywords = ["web"];
     const groupedKeywords = defaultKeywords.concat(keywords);
     const { site } = useStaticQuery(
         graphql`
