@@ -1,5 +1,5 @@
 import React from "react";
-import SocialIcons from '../social-icons/social-icons'
+import SocialIcons from "../social-icons/social-icons";
 import "./hello.less";
 
 const Hello = () => (
