@@ -8,8 +8,6 @@ module.exports = {
     plugins: [
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
         `gatsby-plugin-robots-txt`,
         {
             resolve: `gatsby-plugin-manifest`,
@@ -18,11 +16,10 @@ module.exports = {
                 short_name: `Jose Tavares`,
                 start_url: `/`,
                 background_color: `#ffffff`,
-                theme_color: `#23a6d5`,
+                theme_color: `#ffffff`,
                 display: `fullscreen`
             }
         },
-        `gatsby-plugin-less`,
         {
             resolve: `gatsby-plugin-prefetch-google-fonts`,
             options: {
@@ -36,6 +33,7 @@ module.exports = {
                 trackingId: process.env.GA
             }
         },
-        `gatsby-plugin-netlify`
+        `gatsby-plugin-netlify`,
+        `gatsby-plugin-emotion`
     ]
 };

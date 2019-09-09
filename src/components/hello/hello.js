@@ -1,12 +1,22 @@
 import React from "react";
+import styled from "@emotion/styled";
 import SocialIcons from "../social-icons/social-icons";
-import "./hello.less";
+import { H1 } from "../../styles/typography";
+
+const HelloContainer = styled.div`
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100vw;
+`;
 
 const Hello = () => (
-    <div className="hello">
-        <h1>Jose Tavares</h1>
+    <HelloContainer>
+        <H1>Jose Tavares</H1>
         <SocialIcons />
-    </div>
+    </HelloContainer>
 );
 
 export default Hello;

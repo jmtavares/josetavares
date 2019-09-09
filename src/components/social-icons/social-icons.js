@@ -1,5 +1,4 @@
 import React from "react";
-import "./social-icons.less";
 import GithubIcon from "./components/github-icon";
 import LinkedinIcon from "./components/linkedin-icon";
 import EmailIcon from "./components/email-icon";

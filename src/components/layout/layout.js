@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-import "./layout.less";
+import { Global, css } from "@emotion/core";
+import { GlobalContainer } from "../../styles/typography";
+
 
 const Layout = ({ children }) => (
     <StaticQuery
@@ -16,9 +18,17 @@ const Layout = ({ children }) => (
         `}
         render={() => (
             <>
-                <div>
+                <Global
+                    styles={css`
+                        body {
+                            margin: 0;
+                            padding: 0;
+                        }
+                    `}
+                />
+                <GlobalContainer>
                     <main>{children}</main>
-                </div>
+                </GlobalContainer>
             </>
         )}
     />
