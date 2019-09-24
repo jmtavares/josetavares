@@ -13,13 +13,6 @@ module.exports = {
                 name: `blog`
             }
         },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/content/assets`,
-                name: `assets`
-            }
-        },
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-robots-txt`,
