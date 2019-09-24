@@ -1,44 +1,36 @@
 import styled from "@emotion/styled";
+import { Link } from "gatsby";
 
 export const H1 = styled.h1`
-    font-size: 48px;
-    color: #fff;
-    margin: 0 0 20px 0;
-    @media screen and (min-width: 768px) {
-        h1 {
-            font-size: 62px;
-        }
+  font-size: 48px;
+  color: #353535;
+  margin: 0 0 20px 0;
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 62px;
     }
+  }
+`;
+
+export const Anchor = styled(Link)`
+  color: #353535;
 `;
 
 export const GlobalContainer = styled.div`
-    width: 100vw;
-    height: 100vh;
-    font-family: "Jua", sans-serif;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;
-    overflow: hidden;
-
-    @keyframes Gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
+  width: 100vw;
+  height: 100vh;
+  font-family: "Asap", sans-serif;
+  background: linear-gradient(-45deg, #ffffff, #353535, #ffffff, #ffffff);
+  background-size: 150% 150%;
+  overflow: hidden;
 `;
 
 export const Icon = styled.a`
-    margin: 0 20px;
-    display: inline-flex;
+  margin: 0 20px;
+  display: inline-flex;
 `;
 
 export const Svg = styled.svg`
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 `;

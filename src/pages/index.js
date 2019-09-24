@@ -4,12 +4,12 @@ import SEO from "../components/seo";
 import Hello from "../components/hello/hello";
 
 const IndexPage = () => {
-    return (
-        <Layout>
-            <SEO title="Jose Tavares" keywords={[]} />
-            <Hello />
-        </Layout>
-    );
+  return (
+    <Layout>
+      <SEO title="Jose Tavares" keywords={[]} />
+      <Hello />
+    </Layout>
+  );
 };
 
 export default IndexPage;
