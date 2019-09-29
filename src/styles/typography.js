@@ -20,8 +20,7 @@ export const GlobalContainer = styled.div`
   width: 100vw;
   height: 100vh;
   font-family: "Asap", sans-serif;
-  background: linear-gradient(-45deg, #ffffff, #353535, #ffffff, #ffffff);
-  background-size: 150% 150%;
+  background-color: #ffffff;
   overflow: hidden;
 `;
 

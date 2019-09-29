@@ -3,8 +3,13 @@ import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
+import Hello from "../components/hello/hello";
 import { Anchor } from "../styles/typography";
 
+const HelloContainer = styled.div`
+  text-align: center;
+  margin-bottom: 40px;
+`;
 const BlogContainer = styled.div`
   width: 600px;
   margin: 0 auto;
@@ -20,6 +25,9 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <BlogContainer>
+          <HelloContainer>
+            <Hello />
+          </HelloContainer>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
             return (
