@@ -33,3 +33,7 @@ export const Svg = styled.svg`
   width: 40px;
   height: 40px;
 `;
+
+export const Section = styled.section`
+  line-height: 24px;
+`;

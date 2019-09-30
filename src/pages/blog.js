@@ -3,13 +3,9 @@ import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
-import Hello from "../components/hello/hello";
-import { Anchor } from "../styles/typography";
+import Header from "../components/header/header";
+import { Anchor, Section } from "../styles/typography";
 
-const HelloContainer = styled.div`
-  text-align: center;
-  margin-bottom: 40px;
-`;
 const BlogContainer = styled.div`
   width: 600px;
   margin: 0 auto;
@@ -25,9 +21,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <BlogContainer>
-          <HelloContainer>
-            <Hello />
-          </HelloContainer>
+          <Header />
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
             return (
@@ -36,15 +30,13 @@ class BlogIndex extends React.Component {
                   <h3>
                     <Anchor to={node.fields.slug}>{title}</Anchor>
                   </h3>
-                  <small>{node.frontmatter.date}</small>
+                  <p>{node.frontmatter.date}</p>
                 </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt
-                    }}
-                  />
-                </section>
+                <Section
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt
+                  }}
+                />
               </article>
             );
           })}

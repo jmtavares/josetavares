@@ -4,6 +4,8 @@ import styled from "@emotion/styled";
 
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
+import Header from "../components/header/header";
+import { Section } from "../styles/typography";
 
 const BlogPostContainer = styled.div`
   width: 600px;
@@ -23,12 +25,13 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <BlogPostContainer>
+          <Header />
           <article>
             <header>
               <h1>{post.frontmatter.title}</h1>
               <p>{post.frontmatter.date}</p>
             </header>
-            <section dangerouslySetInnerHTML={{ __html: post.html }} />
+            <Section dangerouslySetInnerHTML={{ __html: post.html }} />
           </article>
           <nav>
             <ul>

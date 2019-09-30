@@ -1,8 +1,8 @@
 import React from "react";
+import styled from "@emotion/styled";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 import Hello from "../components/hello/hello";
-import styled from "@emotion/styled";
 
 const IndexContainer = styled.div`
   position: absolute;
