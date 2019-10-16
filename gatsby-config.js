@@ -65,6 +65,7 @@ module.exports = {
                     `gatsby-remark-smartypants`
                 ]
             }
-        }
+        },
+        `gatsby-plugin-offline`
     ]
 };
