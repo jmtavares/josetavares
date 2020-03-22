@@ -5,14 +5,14 @@ import EmailIcon from "./components/email-icon";
 import TwitterIcon from "./components/twitter-icon";
 
 const SocialIcons = () => {
-    return (
-        <>
-            <GithubIcon />
-            <LinkedinIcon />
-            <EmailIcon />
-            <TwitterIcon />
-        </>
-    );
+  return (
+    <>
+      <GithubIcon />
+      <LinkedinIcon />
+      <EmailIcon />
+      <TwitterIcon />
+    </>
+  );
 };
 
 SocialIcons.displayName = "SocialIcons";

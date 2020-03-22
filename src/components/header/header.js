@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Hello from '../hello/hello'
+import Hello from "../hello/hello";
 
 const HeaderContainer = styled.div`
   text-align: center;
@@ -8,9 +8,9 @@ const HeaderContainer = styled.div`
 `;
 
 const Header = () => (
-    <HeaderContainer>
-        <Hello />
-    </HeaderContainer>
+  <HeaderContainer>
+    <Hello />
+  </HeaderContainer>
 );
 
 export default Header;
